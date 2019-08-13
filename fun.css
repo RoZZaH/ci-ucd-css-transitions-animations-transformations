@@ -10,6 +10,8 @@
     animation-direction: alternate;
     animation-duration: 2s;
     float: left;
+    /* with transform 
+    transform: rotate(-45deg); */
     
 }
 
