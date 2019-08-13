@@ -9,6 +9,7 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-duration: 2s;
+    float: left;
     
 }
 
@@ -19,5 +20,36 @@
     }
     to {
         height: 150px;
+    }
+}
+
+
+.ball {
+    background-color: #f00;
+    width: 20px;
+    height: 20px;
+    margin: 25px;
+    border-radius: 50%;
+
+    animation: jump 0.5s ease-in-out infinite alternate;
+
+    /*
+    animation-name: bouncing;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s; */
+    position: absolute;
+    left: 200px;
+}
+
+
+@keyframes jump {
+    from {
+        top: 0;
+    }
+    to {
+        top: 150px;
     }
 }
