@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+  <title>CSS animations and transformations :: Challenge 2</title>
+   <!-- Use the rotate function to spin this image infinitely. Name your animation spin. The image should rotate without any breaks and stops. It should be continuous rotation -->
+  <style>
+  
+   img {
+       margin-top: 50px;
+       margin-left: 150px;
+   }
+    
+   .spinner {
+                                /* linear || ease || steps () || cubic-bezier */
+   animation: spin 1s infinite steps(5);
+   /*
+   animation-name: spin;
+   animation-duration: 40000ms;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear; */
+   }
+   
+   @keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+   }
+      
+  </style>
+  
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <img class="spinner" src="https://placebear.com/cache/150-200.jpg" alt="">
+</body>
+</html>
